@@ -2173,7 +2173,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/oficial.png");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -2184,7 +2184,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2482,7 +2482,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 3.5em 0 3em 0;
+				padding: 1.5em 0 3em 0;
 			}
 
 		/* Nav */
@@ -2873,8 +2873,12 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
-				margin: 2em 0 0 0;
+				padding: 7em 0;
+				margin: 0.1em 0 0 0;
+				background: url("../../images/oficial.png");
+		background-position: right ;
+		background-size: auto 70%;
+		background-repeat: no-repeat;
 			}
 
 				#banner header {
@@ -2906,3 +2910,17 @@ input, select, textarea {
 			}
 
 	}
+
+	.back-to-top {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		display: none;
+		z-index: 1000;
+	}
+	
+	.back-to-top img {
+		width: 50px;
+		height: 50px;
+	}
+	

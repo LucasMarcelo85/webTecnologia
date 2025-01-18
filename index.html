@@ -262,29 +262,30 @@
 							
 							<div class="col-4 col-12-medium">
 								<section>
-									
-									
 									<ul class="contact">
 										<li>
 											<h3>Endereço</h3>
-											<p>
-												Av. Valparaiso,1300<br />
-												Messejana-Fortaleza/CE<br />
-
-											</p>
+											<p>Av. Valparaiso,1300<br />Messejana-Fortaleza/CE<br /></p>
 										</li>
 										<li>
 											<h3>Whatsapp</h3>
 											<p>(85) 99190-8723</p>
-											
 										</li>
 										<li>
 											<h3>Phone</h3>
 											<p>(85) 4042-0510</p>
 										</li>
+										<li>
+											<h3>Siga-nos no Instagram</h3> <br>
+											
+										</li>
+										<a href="https://www.instagram.com/webverceltecnologia" target="_blank">
+											<img src="images/instagram.png" alt="Instagram" width="30" height="30">
+										</a>
 									</ul>
 								</section>
 							</div>
+							
 							<div class="col-12">
 
 								<!-- Copyright -->
@@ -300,6 +301,10 @@
 				</section>
 
 		</div>
+		<a href="#" id="back-to-top" class="back-to-top">
+			<img src="images/up-arrow.png" alt="Voltar ao topo" width="50" height="50">
+		</a>
+		
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -308,6 +313,24 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Mostra a seta ao descer a página
+				window.onscroll = function() {
+					var backToTop = document.getElementById("back-to-top");
+					if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+						backToTop.style.display = "block";
+					} else {
+						backToTop.style.display = "none";
+					}
+				};
+			
+				// Rola a página até o topo ao clicar na seta
+				document.getElementById("back-to-top").addEventListener("click", function(e) {
+					e.preventDefault();
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				});
+			</script>
+			
 
 	</body>
 </html>
